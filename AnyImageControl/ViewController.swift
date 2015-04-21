@@ -77,7 +77,7 @@ class ViewController: UIViewController {
                                                             //このメソッドをまともに動かすにはAutoLayoutをDisableにしないとダメ
                                                             //(subViewを再描画され元の位置に戻ってしまうから)
             } else {
-                isImageInsideArray[index] = false           //タッチしていないが蔵王に対応するisImageInsideArrayをfalseにする
+                isImageInsideArray[index] = false           //タッチしていない画像に対応するisImageInsideArrayをfalseにする
 
             }
         }
