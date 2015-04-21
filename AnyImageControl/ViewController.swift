@@ -185,12 +185,20 @@ class ViewController: UIViewController {
 
     //Imageを初期位置に戻すメソッド
     @IBAction func pressInitButton(sender: AnyObject) {
-        image1st.layer.position = initialImagePointArray[0]
-        image2nd.layer.position = initialImagePointArray[1]
-        image3rd.layer.position = initialImagePointArray[2]
-        image4th.layer.position = initialImagePointArray[3]
-        image5th.layer.position = initialImagePointArray[4]
-        image6th.layer.position = initialImagePointArray[5]
+        UIView.animateWithDuration(0.5, animations: { () -> Void in
+            self.image1st.center.x = self.initialImagePointArray[0].x
+            self.image1st.center.y = self.initialImagePointArray[0].y
+            self.image2nd.center.x = self.initialImagePointArray[1].x
+            self.image2nd.center.y = self.initialImagePointArray[1].y
+            self.image3rd.center.x = self.initialImagePointArray[2].x
+            self.image3rd.center.y = self.initialImagePointArray[2].y
+            self.image4th.center.x = self.initialImagePointArray[3].x
+            self.image4th.center.y = self.initialImagePointArray[3].y
+            self.image5th.center.x = self.initialImagePointArray[4].x
+            self.image5th.center.y = self.initialImagePointArray[4].y
+            self.image6th.center.x = self.initialImagePointArray[5].x
+            self.image6th.center.y = self.initialImagePointArray[5].y
+        })
     }
 }
 
