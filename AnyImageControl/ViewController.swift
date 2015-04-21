@@ -51,7 +51,15 @@ class ViewController: UIViewController {
         self.image4th.userInteractionEnabled = true
         self.image5th.userInteractionEnabled = true
         self.image6th.userInteractionEnabled = true
- 
+
+        //透過を上げてパステルカラーみたくする
+        //self.image1st.layer.opacity = 0.5
+        //self.image2nd.layer.opacity = 0.5
+        //self.image3rd.layer.opacity = 0.5
+        //self.image4th.layer.opacity = 0.5
+        //self.image5th.layer.opacity = 0.5
+        //self.image6th.layer.opacity = 0.5
+        
         for (index, val) in enumerate(initialImagePointArray) {
             initialImagePointArray[index] = getImagePointTag(index + 1) //各Imageの初期座標を保存する
         }
